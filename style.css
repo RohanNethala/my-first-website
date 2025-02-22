@@ -1,0 +1,31 @@
+h1 {
+    font-family: 'Comic Neue';
+    color: hsl(240, 100%, 50%);
+}
+
+p {
+    text-decoration: underline;
+    font-weight: 900;
+
+}
+
+.whiteText{
+    font-family: Helvetica;
+}
+
+img {
+    margin: -10px 0px;
+}
+
+.Margin{
+    margin-bottom: 10px;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: blue;
+}
+
+#SubmitBox{
+
+}

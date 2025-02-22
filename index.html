@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Make sure you put this AFTER Leaflet's CSS -->
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <title>Document</title>
+</head>
+<body class="main" id="Main">
+    <h1>This is a header</h1>
+    <a href="google.com">Google Link</a>
+    <input type="color" name="" id="">
+    <div>
+        <p>Lots of potholes:</p>
+        <ol>
+            <li>
+                <button onclick="showOnMap(41.69, -83.81)">View On Map</button>
+            </li>
+            <li>
+                <button onclick="showOnMap(40.69, -83.81)">View On Map</button>                
+            </li>
+            <li>
+                <button onclick="showOnMap(39.69, -83.81)">View On Map</button>                
+            </li>
+        </ol>
+    </div>
+
+    <div id="map"></div>
+
+    <div class="container">
+        <h1 id="Title_Text" class="whiteText"></h1>
+        <form action="" class="Form" id="Form">as</form>
+
+        <script>
+            var map = L.map('map').setView([51.505, -0.09], 13);
+
+            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+            }).addTo(map);
+        </script>
+
+        <input type="submit" value="Submit" class="Margin" id="SubmitBox">
+    </div>
+</body>
+</html>
